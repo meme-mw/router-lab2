@@ -1,5 +1,13 @@
+import Nav from './Nav'
 function Login(){
-    return(
+
+  let bol=false;
+
+  return(
+      <div>
+            {window.location.pathname==='/login'?(
+            <Nav/>
+            ):""}
         <div className="continer mx-auto w-2/4 flex justify-around flex-col pt-20" >
             <h1 className="text-xl py-5">Log In</h1>
           <label className="input input-bordered flex items-center gap-2">
@@ -52,6 +60,7 @@ function Login(){
   </svg>
   <input type="password" className="grow" value="password" />
 </label>
+        </div>
         </div>
     )
 }
